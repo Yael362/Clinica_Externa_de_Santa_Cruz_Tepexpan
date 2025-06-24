@@ -1,0 +1,31 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    padding: 30px 20px;
+    color: white;
+    text-shadow: 1px 1px 2px #2e7d32;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 1.8em;
+}
+
+/* Contenido */
+#contenido {
+    padding: 30px;
+}
+
+/* Formularios */
+form {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    margin: 30px auto;
+    background

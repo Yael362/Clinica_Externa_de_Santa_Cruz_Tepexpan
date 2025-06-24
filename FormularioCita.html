@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<HTML>
+     <HEAD>
+     <TITLE>Clinica Santa Cruz Tepexpan</TITLE>
+      <link rel="stylesheet" href="estilos.css">
+     </HEAD>
+     <body>
+
+    <!-- Imagen en el título -->
+    <header>
+        <h1><img src="1985.png"width="50"> Clinica de Santa Cruz Tepexpan  <img src="1896.png"width="50"></img></h1>
+        <table>
+            <tr>
+               <td>  <a href="index.html">Regresar</a> </td>
+            </tr>
+          </table> 
+    </header>    
+   <form id="formularioCita">
+  <h1>Agenda tu cita aquí!!</h1>
+  <label>Curp</label>
+  <input type="text" name="curp">
+  <br><br><br>
+
+  <label>Nombre</label>
+  <input type="text" name="nombre">
+  <br><br><br>
+
+  <label>Apellido Paterno</label>
+  <input type="text" name="apellidoP">
+  <br><br><br>
+
+  <label>Apellido Materno</label>
+  <input type="text" name="apellidoM">
+  <br><br><br>
+
+  <label>Fecha</label>
+  <input type="date" name="fecha">
+  <br><br><br>
+
+  <label>Motivo de la cita</label>
+  <input type="text" name="motivo">
+  <br><br><br>
+
+  <button type="button" onclick="validarFormulario()">Agenda tu cita</button>
+</form>
+
+<script>
+function validarFormulario() {
+  const formulario = document.getElementById('formularioCita');
+  const campos = formulario.querySelectorAll('input');
+  let camposLlenos = true;
+
+  campos.forEach(input => {
+    if (input.value.trim() === '') {
+      camposLlenos = false;
+    }
+  });
+
+  if (!camposLlenos) {
+    alert("Te hace falta llenar un campo.");
+  } else {
+    alert("Tu cita ha sido agendada correctamente.");
+    formulario.reset();
+  }
+}
+</script>
+
+         
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+        <H1>Gracias por entrar al sitio web</H1>
+    </footer>
+    <img src="facebook.png" width="50">
+<img src="insta.png" width="50">
+<img src="tik.png" width="50">
+<br>
+
+<TD><A HREF="https://www.facebook.com/profile.php?id=61577368452565">Facebook</A></TD>
+<TD><A HREF="https://www.instagram.com/clinica_santa_tepexpan?igsh=MTVqcmQ4Zjh1ajg5cw==">Instagram</A></TD>
+<TD><A HREF="https://www.tiktok.com/@clinica.santa.cruz?_t=ZS-8xSkNpu3ACv&_r=1">Tik Tok</A></TD>
+</body>
+</html>
